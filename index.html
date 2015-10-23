@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD><title>3.SEMESTER</TITLE>
+        <script src='js/sql.js'></script>
+        <script src="js/showTable.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+        <link href="//fonts.googleapis.com/css?family=Lato:300,300italic|Inconsolata" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=0.7" /> 
+    </HEAD>
+    <script>
+        
+        $(document).ready(function(){
+            $("#wocheTab1").click(function(){
+                buttonUngeradePressed();
+            });
+            
+            $("#wocheTab2").click(function(){ 
+                buttonGeradePressed();
+            });
+            
+        });
+    </script>
+	<BODY>
+        <div class="topmenu"><h1 id="TopHeader1">HTW DRESDEN</h1></div>
+        <div align = "center" class="headers" >
+                <H1 class="tableHeader1">3.SEMESTER</H1>
+        </div>
+        <div class="table-responsive" ><!--scrolling für kleine device -->
+                <table id="dynTable" class="tableUniq"></table>
+            
+        </div>
+        <div align = "center" class="headers" >
+                <H1 class="tableHeader1" id="tableHeader1Stundenplan">STUNDENPLAN</H1>
+        </div>
+        <div class="TabsMaterial">
+            <div class="flexWrapperWocheTabs" id="flip">
+                <div class="flexWrapperWocheTabsShadow">
+                    <div class="wocheTabs" id="wocheTab1">Ungerade Woche</div>
+                    <div class="wocheTabs" id="wocheTab2">Gerade Woche</div>
+                </div> 
+            </div> 
+            <div id="tableKalender" class="table-responsive" ><!--scrolling für kleine device -->
+                    <table id="KalenderUngerade" class="tableUniq"></table>
+                    <table id="KalenderGerade" class="tableUniq"></table>
+            </div> 
+        </div>
+        <script> 
+            var dbPath = 'http://www2.htw-dresden.de/~s72743/3semester/db/3sem.db';
+            var SQLQuery = "SELECT * FROM FACH";
+            var table = document.getElementById("dynTable");
+            showTableFromSQL(table,dbPath,SQLQuery);
+            //makeTableHTML(contents); 
+            var dbPath2 = 'http://www2.htw-dresden.de/~s72743/3semester/db/3sem.db';
+            var SQLQuery2 = "SELECT * FROM KalenderUngerade";
+            var tableKalender = document.getElementById("KalenderUngerade");
+            showTableFromSQL(tableKalender,dbPath2,SQLQuery2);
+            //
+            var dbPath3 = 'http://www2.htw-dresden.de/~s72743/3semester/db/3sem.db';
+            var SQLQuery3 = "SELECT * FROM KalenderGerade";
+            var tableKalender2 = document.getElementById("KalenderGerade");
+            showTableFromSQL(tableKalender2,dbPath2,SQLQuery3);
+        
+        var weekGeradeOrUngStr;
+        var mydate = new Date();
+            setCurrentWeek();
+            window.setInterval(showProgressCalender, 20 );
+        </script>
+	</BODY>
+</HTML>

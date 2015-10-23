@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FAECHER>
+    <FACH>
+        <KURZBEZ>SE</KURZBEZ>
+        <BEZ>Software Engineering II</BEZ>
+        <LINK>http://www2.htw-dresden.de/~fritzsch/lvws1516.html</LINK>
+        <LOGIN>leer</LOGIN>
+        <PASSWORD>2015</PASSWORD> 
+    </FACH>
+    <FACH>
+        <KURZBEZ>RA</KURZBEZ>
+        <BEZ>Rechnerarchitektur</BEZ>
+        <LINK>http://www2.htw-dresden.de/~schoeni/</LINK>
+        <LOGIN>leer</LOGIN>
+        <PASSWORD>mi043##</PASSWORD> 
+    </FACH>
+    <FACH>
+        <KURZBEZ>CG/V I</KURZBEZ>
+        <BEZ>Computergrafik/Visualisierung I</BEZ>
+        <LINK>https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/5774409730/CourseNode/92416759259280</LINK>
+        <LOGIN>leer</LOGIN>
+        <PASSWORD>leer</PASSWORD> 
+    </FACH>
+     <FACH>
+        <KURZBEZ>DBS II</KURZBEZ>
+        <BEZ>Datenbanksysteme II</BEZ>
+        <LINK>http://www.informatik.htw-dresden.de/~toll/dbs2/</LINK>
+        <LOGIN>dbs2015</LOGIN>
+        <PASSWORD>dresden</PASSWORD> 
+    </FACH>
+	<FACH>
+        <KURZBEZ>RN/KS</KURZBEZ>
+        <BEZ>Rechnernetze/Kommunikationssysteme</BEZ>
+        <LINK>http://www2.htw-dresden.de/~skuehn/</LINK>
+        <LOGIN>leer</LOGIN>
+        <PASSWORD>rnks0910</PASSWORD> 
+    </FACH>
+    <FACH>
+        <KURZBEZ>Prog III</KURZBEZ>
+        <BEZ>Programmierung III</BEZ>
+        <LINK>http://www2.htw-dresden.de/~beck/java/</LINK>
+        <LOGIN>leer</LOGIN>
+        <PASSWORD>leer</PASSWORD> 
+    </FACH>
+</FAECHER>
