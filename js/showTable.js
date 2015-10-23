@@ -165,6 +165,8 @@ function showProgressCalender(){
                 document.getElementById(pathToCell).style.background="url(img/d78470a4.png) no-repeat";
                 //document.getElementById(pathToCell).style.backgroundRepeat="repeat-x";
                 document.getElementById(pathToCell).style.backgroundSize=getProgressOfClassUni()+"% "+"100%";
+				document.getElementById(pathToCell).innerHTML=" noch :"+progressCELL.TIMEDIFFNOWANDEND+"min.";
+                document.getElementById(pathToCell).parentNode.style.boxShadow="inset 0 0 7px rgba(0, 0, 0, 0.36)"; 
                 //document.getElementById(pathToCell).style.backgroundPositionX=(count++)+"%";
                 
 }
